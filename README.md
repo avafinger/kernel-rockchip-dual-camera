@@ -6,6 +6,13 @@
 This kernel is for the NanoPi M4 and to run two cameras.
 MIPI CSI-1 and CSI-2 are configured with OV13850 and/or OV4689.
 
+## Concept (dual-camera or multi-camera)
+
+Conceptually dual-camera means two cameras attached to the same CSI and multi-camera is two cameras, one attached to CSI1 and one attached to CSI2.
+The goal here is to have one camera (or different camera - one for the front or one for the back) for each CSI. NanoPi M4 has one CSI1 and one CSI2 thus is more a multi-camera concept. There is an OV13850 driver (dual-camera) if you can attach two cameras on the same CSI.
+For simplicity i call this dual-camera.
+
+
 ## Sample output / Troubleshooting
 
 1 - Two OV4689 attached
